@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_radius_activation">4dp</dimen>
+    <dimen name="default_size_border_activation">1dp</dimen>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="StatusSquareImageView">
+        <attr name="isActivation" format="boolean"/>
+        <attr name="radiusActivation" format="dimension"/>
+        <attr name="visibleBorderActivation" format="boolean"/>
+        <attr name="sizeBorderActivation" format="dimension"/>
+        <attr name="colorBorderActivation" format="color"/>
+        <attr name="colorActivation" format="color"/>
+        <attr name="radioActivation" format="integer"/>
+    </declare-styleable>
+</resources>

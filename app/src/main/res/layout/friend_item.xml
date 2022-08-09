@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="data"
+            type="com.example.chatapp.model.response.FriendResponse" />
+    </data>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/avatar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        app:loadNormalImageLink="@{data.avatar}"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Duy Huan"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="17dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="You: Hello"
+            android:textSize="15dp"
+            android:textColor="@color/grey_500"/>
+    </LinearLayout>
+</LinearLayout>
+</layout>
